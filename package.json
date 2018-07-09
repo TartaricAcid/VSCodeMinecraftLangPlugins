@@ -1,0 +1,26 @@
+{
+    "name": "minecraft-lang",
+    "displayName": "minecraft-lang",
+    "description": "Add a syntax hightlight support to minecraft lang",
+    "version": "0.0.1",
+    "publisher": "minecrft-lang",
+    "engines": {
+        "vscode": "^1.25.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "lang",
+            "aliases": ["Minecraft Lang", "lang"],
+            "extensions": [".lang"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "lang",
+            "scopeName": "source.lang",
+            "path": "./syntaxes/lang.tmLanguage.json"
+        }]
+    }
+}

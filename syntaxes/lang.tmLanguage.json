@@ -1,0 +1,40 @@
+{
+	"name": "Minecraft Lang",
+	"patterns": [{
+		"include": "#comment"
+	}, {
+		"include": "#keys"
+	}, {
+		"include": "#values"
+	}],
+	"repository": {
+		"comment": {
+			"match": "^#(.*)$|^//(.*)$",
+			"name": "comment.line.number-sign.lang"
+		},
+		"keys": {
+			"name": "entity.other.attribute-name.keys.lang",
+			"match": "^[^=]*(?==)"
+		},
+		"values": {
+			"begin": "\\=",
+			"end": "$",
+			"name": "variable.parameter.values.lang",
+			"patterns": [{
+				"begin": "<",
+				"end": ">",
+				"name": "entity.name.function.values.lang"
+			}, {
+				"match": "§[0-9a-fk-or]{1}",
+				"name": "entity.name.function.values.lang"
+			}, {
+				"match": "%([1-9]+\\$)?(\\d)*(\\.(\\d)+)?[dcbsfexh]",
+				"name": "entity.name.tag.values.lang"
+			}, {
+				"match": ".",
+				"name": "entity.other.inherited-class.values.lang"
+			}]
+		}
+	},
+	"scopeName": "source.lang"
+}
