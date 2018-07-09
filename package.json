@@ -1,7 +1,7 @@
 {
     "name": "minecraft-lang",
     "displayName": "minecraft-lang",
-    "description": "Add a syntax hightlight support to minecraft lang",
+    "description": "Add a syntax hightlight support to minecraft lang file",
     "version": "0.0.1",
     "publisher": "minecrft-lang",
     "engines": {
@@ -14,8 +14,7 @@
         "languages": [{
             "id": "lang",
             "aliases": ["Minecraft Lang", "lang"],
-            "extensions": [".lang"],
-            "configuration": "./language-configuration.json"
+            "extensions": [".lang"]
         }],
         "grammars": [{
             "language": "lang",
