@@ -16,6 +16,10 @@
 			"name": "entity.other.attribute-name.keys.lang",
 			"match": "^[^=]*(?==)"
 		},
+		"color":{
+			"name": "entity.name.function.values.lang"
+			"match": "(?<=&)(\w)",
+		},
 		"values": {
 			"begin": "\\=",
 			"end": "$",
